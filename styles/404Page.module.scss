@@ -1,0 +1,76 @@
+.dark {
+    transition: .5s ease;
+
+    background-color: #1E1D24 !important;
+    color: white;
+
+    header {
+        svg {
+            path {
+                fill: rgba(255, 255, 255, 0.10);
+                stroke: white;
+            }
+        }
+    }
+
+    .projects {
+        .box {
+            background-color: #292929 !important;
+
+            a {
+                background-color: white !important;
+                color: black !important;
+
+                svg {
+
+                    path {
+                        fill: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .viewMore {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    .experiences {
+        .box {
+            background-color: #282828 !important;
+            border: 1px solid #2C2C2C !important;
+        }
+    }
+
+}
+
+.light {
+    transition: .5s ease;
+    background-color: #fff;
+}
+
+
+.container {
+    transition: .5s ease;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+        font-size: 148px;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 48px;
+        width: 40rem;
+    }
+
+    div:first-child {
+        margin-right: 5rem;
+    }
+}
