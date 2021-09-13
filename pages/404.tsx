@@ -13,22 +13,6 @@ const Page404: NextPage = () => {
 
     const [theme, setTheme] = React.useState('')
 
-    const handleChangeTheme = () => {
-
-        if (theme === 'light') {
-
-            localStorage.setItem('@theme', 'dark')
-            setTheme('dark')
-
-        } else {
-
-            localStorage.setItem('@theme', 'light')
-            setTheme('light')
-
-        }
-
-    }
-
     React.useEffect(() => {
 
         const data = localStorage.getItem('@theme')

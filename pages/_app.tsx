@@ -1,7 +1,15 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import React from 'react'
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  React.useEffect(() => {
+
+    fetch("https://api.gbxxy.com/details/add-view")
+
+  })
+
   return (
     <>
       <title>gbxxy</title>

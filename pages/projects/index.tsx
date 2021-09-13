@@ -101,6 +101,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const data = await fetch("https://api.gbxxy.com/projects/")
   let res = await data.json()
 
+  fetch("https://api.gbxxy.com/details/add-view")
+
   return {
     props: {
       projects: res.projects
