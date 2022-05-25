@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   React.useEffect(() => {
 
-    fetch("https://api.gbxxy.com/details/add-view")
+    //fetch("https://api.gbxxy.com/details/add-view")
 
   })
 

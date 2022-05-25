@@ -17,7 +17,6 @@ interface Project {
 export default function PageProjects({ projects }: { projects: Project[] }) {
 
     const router = useRouter()
-
     const [theme, setTheme] = React.useState('light')
 
     const handleChangeTheme = () => {
@@ -98,14 +97,12 @@ export default function PageProjects({ projects }: { projects: Project[] }) {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const data = await fetch("https://api.gbxxy.com/projects/")
+  const data = await fetch("https://api.github.com/users/gbxxy/repos")
   let res = await data.json()
-
-  fetch("https://api.gbxxy.com/details/add-view")
 
   return {
     props: {
-      projects: res.projects
+      projects: res
     },
     revalidate: 3600
   }

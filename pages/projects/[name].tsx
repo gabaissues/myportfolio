@@ -46,14 +46,14 @@ const ViewPage: NextPage = () => {
 
             if(!router.query.name) return;
 
-            const data = await fetch(`https://api.gbxxy.com/projects/${router.query.name}`)
-            const res = await data.json()
+            //const data = await fetch(`https://api.gbxxy.com/projects/${router.query.name}`)
+            //const res = await data.json()
 
-            setUrl(`https://api.gbxxy.com/videos/${res.project.name}.mp4`)
-            setName(res.project.name)
+            //setUrl(`https://api.gbxxy.com/videos/${res.project.name}.mp4`)
+            //setName(res.project.name)
 
-            setGithub(res.project.url)
-            setTime(res.project.time)
+            //setGithub(res.project.url)
+            //setTime(res.project.time)
 
         }
         RenderContent()
